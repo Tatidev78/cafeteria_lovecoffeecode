@@ -1,0 +1,259 @@
+:root{
+    --bg:#f5f5f5;
+    font-size: 10px;
+    --border: 0.1rem solid rgba(139,69,19,1);
+    --main-color:#013A63;
+}
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+body{
+    background-color: var(--bg);
+    padding-top: 130px; /* Adicione isso para compensar a altura do header */
+}
+
+section{
+    padding: 3rem 2rem;
+    margin:0 auto;/* 0 em cima e em baixo e automatico para laterais, centralizando conteudo*/
+    max-width: 1200px;
+    scroll-margin-top: 130px;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 99;
+    border-bottom: var(--border);
+    font-family: lobster, cursive;
+    background-color: var(--bg);
+}
+
+.header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+.img-logo{
+    width:100px;
+    height:auto;
+}
+
+.navbar a{
+    margin: 0 1rem;
+    font-size: 2.1rem;
+    color:#8B4513;
+}
+
+.navbar a:hover{
+    color:var(--main-color);
+    border-bottom: var(--border);
+    font-size: 2.3rem;
+}
+
+.icons img{
+    margin: 1rem;
+    cursor:pointer;
+}
+.icons img:hover{
+    width: 35px;
+    height: 35px;
+}
+.home-container {
+    width: 80vw;
+    height: 80vh;
+    background: url("./cafeback.jpg") no-repeat center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: flex; /* Adicionado para usar flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.content {
+    max-width: 60rem;
+    text-align: center; /* Centraliza o texto */
+    color: #f5f5f5; /* Garanta que a cor do texto esteja definida */
+}
+
+.content h3{
+    color:#f5f5f5;
+    font-size: 5rem;
+}
+.content p{
+    color:#f5f5f5;
+    font-size: 1.8rem;
+    font-weight: 100;
+    line-height: 1.8rem;
+    padding: 1rem 0;
+}
+
+.btn{
+    background-color: var(--main-color);
+    color:#f5f5f5;
+    padding:1rem 3rem;
+    font-size:1.7rem;
+    cursor:pointer;
+    margin-top: 1rem;  
+    display: inline-block;  
+}
+
+.about{
+    background-color: #6c5343;
+    margin-top: 15px;
+}
+.title{
+    font-size: 5rem;
+    color:var(--bg);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.title span{
+    color: #E2725B;
+}
+
+.title1{
+    font-size: 5rem;
+    color:#4B4B4B;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.title1 span{
+    color: #E2725B;
+}
+
+.responsive-img {
+    width: 80%; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top:0;
+    border: 5px solid #311a09;
+}
+
+.about .row {
+    display: flex;
+    justify-content: space-between; /* Garante que os itens sejam distribuídos corretamente */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    margin:10px;
+}
+
+.about .row .container-img {
+    flex: 0 0 40%; /* Define a largura fixa para o contêiner da imagem */
+    max-width: 50%; /* Ajuste conforme necessário */
+   
+}
+
+.about .row .content-about {
+    flex: 0 0 58%; /* Define a largura fixa para o contêiner de texto */
+    max-width: 58%; /* Ajuste conforme necessário */
+}
+
+
+.content-about h3{
+    color:#f5f5f5;
+    font-size: 4rem;
+}
+.content-about p{
+    color:#f5f5f5;
+    font-size: 1.8rem;
+    font-weight: 100;
+    line-height: 1.8rem;
+    padding: 1rem 0;
+}
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    text-align: center;
+    border:var(--border);
+    padding: 5rem;
+    cursor:pointer;
+}
+.menu .box-container .box img{
+    height: 10rem;
+}
+.menu .box-container .box h3{
+    color:#6c5343;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.menu .box-container .box .price{
+    color:#6c5343;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+    
+}
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover{
+    background-color: #556B2F;
+}
+.menu .box-container .box:hover>*{
+    color:#f5f5f5;
+}
+
+.review{
+    background-color:#9c7d4b ;
+}
+.review .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2 rem;
+    background-color: #f5f5f5;
+}
+.review .box-container .box p{
+    font-size: 1.5rem;
+    color: #6c5343;
+    padding: 2rem 0;
+    line-height: 1.8rem;
+}
+
+.review .box-container .box h3{
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+.review .box-container .box .user{
+    height: 7rem;
+    width:7rem;
+    border-radius: 50%;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer{
+    text-align: center;
+}
+
+.footer .share{
+    padding:1rem 0;
+}
+
+.footer .share img{
+    margin: 0.3rem;
+    cursor:pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.footer .share img:hover{
+    background-color: #3190d4;
+}
